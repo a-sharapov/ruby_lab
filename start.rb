@@ -1,5 +1,5 @@
 #15 из ряда Фибоначчи
-c = 15; o = 0; n = 1; c.times {n, o = n + o, n; p n};
+c,o,n = 15,0,1; c.times {n, o = n + o, n; p n};
 
 #Шифровка
 str = "СОСНА"; p str.downcase.gsub(/([aeiouауоыиэяюёе])/, '\1C\1').upcase;
