@@ -6,4 +6,4 @@ str = "СОСНА"; p str.downcase.gsub(/([aeiouауоыиэяюёе])/, '\1C\1'
 
 #Ключи
 hash = {'key_one' => 'one', 'tree' => 'two', two: 'three', 12345 => '12345'};
-p hash.keys.sort_by {|k| k.to_s.length}
+p hash.transform_keys(&:to_s).keys.sort_by {|k| k.to_s.length}
